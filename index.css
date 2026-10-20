@@ -10,5 +10,28 @@
 
 .grid {
   display: grid;
+  height: 100%;
   gap: 20px;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "aside footer";
+}
+
+header {
+  grid-area: header;
+}
+
+aside {
+  grid-area: aside;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
 }
