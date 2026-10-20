@@ -16,3 +16,8 @@
   justify-items: start;
   align-items: start;
 }
+
+.grid > div:nth-child(6) {
+  align-self: center;
+  justify-self: end;
+}
